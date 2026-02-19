@@ -13,8 +13,6 @@ export function UserTable() {
         <h3 className="text-lg font-bold text-gray-800">Recent Users</h3>
       </div>
       <div className="overflow-x-auto">
-        {/* [BUG - TYPO] 'border-collaps' is invalid. Should be 'border-collapse'. */}
-        {/* [FIX] <table className="w-full text-left border-collapse"> */}
         <table className="w-full text-left border-collaps">
           <thead>
             <tr className="bg-gray-50 border-b border-gray-200 text-xs uppercase text-gray-500 font-semibold">
@@ -28,8 +26,6 @@ export function UserTable() {
             {users.map((user) => (
               <tr key={user.id} className="hover:bg-gray-50 transition-colors">
                 <td className="px-6 py-4">
-                  {/* [BUG - COLOR] 'text-gray-100' on white background is unreadable (Low Contrast). */}
-                  {/* [FIX] <div className="font-medium text-gray-900">{user.name}</div> */}
                   <div>
                     <div className="font-medium text-gray-100">{user.name}</div>
                     <div className="text-sm text-gray-100">{user.email}</div>

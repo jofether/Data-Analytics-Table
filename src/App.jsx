@@ -6,14 +6,10 @@ import { UserTable } from './components/UserTable';
 
 function App() {
   return (
-    // [BUG - LAYOUT] 'flex-col' stacks the sidebar on top of the content instead of side-by-side.
-    // [FIX] <div className="flex h-screen bg-gray-100 font-sans">
     <div className="flex flex-col h-screen bg-gray-100 font-sans">
       
       <Sidebar />
 
-      {/* [BUG - TYPO] 'overflow-hidde' is invalid. Scrollbars might appear where they shouldn't. */}
-      {/* [FIX] <div className="flex-1 flex flex-col overflow-hidden"> */}
       <div className="flex-1 flex flex-col overflow-hidde">
         <Navbar />
 

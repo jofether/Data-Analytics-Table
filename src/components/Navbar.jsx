@@ -2,8 +2,6 @@ import React from 'react';
 
 export function Navbar() {
   return (
-    // [BUG - LAYERS] '-z-10' places the navbar behind the main content/background.
-    // [FIX] <nav className="bg-white shadow-sm h-16 z-10 relative">
     <nav className="bg-white shadow-sm h-16 -z-10 relative">
       <div className="px-6 h-full flex items-center justify-between">
         <div className="flex items-center gap-4">
@@ -24,8 +22,6 @@ export function Navbar() {
           <button className="p-2 text-gray-400 hover:bg-gray-100 rounded-full">🔔</button>
           <div className="flex items-center gap-3 border-l pl-4 border-gray-200">
             <div className="text-right hidden sm:block">
-              {/* [BUG - COLOR] 'text-white' on white background makes the name invisible. */}
-              {/* [FIX] <p className="text-sm font-semibold text-gray-700">John Doe</p> */}
               <p className="text-sm font-semibold text-white">John Doe</p>
               <p className="text-xs text-gray-500">Administrator</p>
             </div>

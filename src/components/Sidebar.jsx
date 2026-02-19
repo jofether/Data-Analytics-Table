@@ -14,9 +14,6 @@ export function Sidebar() {
         <span className="text-xl font-bold text-blue-600">DataViz</span>
       </div>
 
-      {/* [BUG - SPACING] Negative margin pulls the menu up into the logo area. */}
-      {/* [BUG - LAYOUT] 'flex-row' forces items to stack horizontally causing overflow/mess. */}
-      {/* [FIX] <nav className="flex-1 p-4 space-y-1 overflow-y-auto"> */}
       <nav className="flex-1 p-4 -mt-20 flex flex-row flex-wrap space-y-1 overflow-y-auto">
         {menuItems.map((item) => (
           <a
