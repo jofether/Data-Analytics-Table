@@ -1,0 +1,155 @@
+{
+  "repository": "Data Analytics Table",
+  "bugs": [
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 9,
+      "clean_code": "<div className=\"flex h-screen bg-gray-100 font-sans\">",
+      "buggy_code": "<div className=\"flex flex-col h-screen bg-gray-100 font-sans\">",
+      "css_selector": ".flex-col",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "overflow",
+      "file_modified": "src/App.jsx",
+      "line_number": 13,
+      "clean_code": "<div className=\"flex-1 flex flex-col overflow-hidden\">",
+      "buggy_code": "<div className=\"flex-1 flex flex-col overflow-hidde\">",
+      "css_selector": ".overflow-hidden",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 5,
+      "clean_code": "<nav className=\"bg-white shadow-sm h-16 z-10 relative\">",
+      "buggy_code": "<nav className=\"bg-white shadow-sm h-16 -z-10 relative\">",
+      "css_selector": ".z-10",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/Navbar.jsx",
+      "line_number": 25,
+      "clean_code": "<p className=\"text-sm font-semibold text-gray-700\">John Doe</p>",
+      "buggy_code": "<p className=\"text-sm font-semibold text-white\">John Doe</p>",
+      "css_selector": ".text-white",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/components/Sidebar.jsx",
+      "line_number": 17,
+      "clean_code": "<nav className=\"flex-1 p-4 space-y-1 overflow-y-auto\">",
+      "buggy_code": "<nav className=\"flex-1 p-4 -mt-20 flex flex-row flex-wrap space-y-1 overflow-y-auto\">",
+      "css_selector": ".flex-row",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "padding",
+      "file_modified": "src/components/StatCard.jsx",
+      "line_number": 5,
+      "clean_code": "<div className=\"bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow\">",
+      "buggy_code": "<div className=\"bg-white p-0 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow\">",
+      "css_selector": ".p-0",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "position",
+      "file_modified": "src/components/StatCard.jsx",
+      "line_number": 13,
+      "clean_code": "<div className={`p-3 rounded-lg bg-${color}-50 text-${color}-600`}>",
+      "buggy_code": "<div className={`p-3 rounded-lg bg-${color}-50 text-${color}-600 fixed top-0 right-0`}>",
+      "css_selector": ".fixed",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "border-collapse",
+      "file_modified": "src/components/UserTable.jsx",
+      "line_number": 16,
+      "clean_code": "<table className=\"w-full text-left border-collapse\">",
+      "buggy_code": "<table className=\"w-full text-left border-collaps\">",
+      "css_selector": ".border-collapse",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/UserTable.jsx",
+      "line_number": 30,
+      "clean_code": "<div className=\"font-medium text-gray-900\">{user.name}</div>",
+      "buggy_code": "<div className=\"font-medium text-gray-100\">{user.name}</div>",
+      "css_selector": ".text-gray-100",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "text-color",
+      "file_modified": "src/components/UserTable.jsx",
+      "line_number": 31,
+      "clean_code": "<div className=\"text-sm text-gray-900\">{user.email}</div>",
+      "buggy_code": "<div className=\"text-sm text-gray-100\">{user.email}</div>",
+      "css_selector": ".text-gray-100",
+      "bounding_box": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      }
+    }
+  ]
+}
